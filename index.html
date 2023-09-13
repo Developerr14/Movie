@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Magnet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about us.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>New Movies of 2023</h1>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <p>Explore and Download New Movies On First Day. <br> <br>
+        <a href="booking.html" class="hero-btn">Download Movies</a>
+    </div>
+    </section>
+
+    <section class="course">
+        <h1>All New Movies of 2023 on First Day</h1>
+        <p>Welcome To Movie Magnet !</p>
+    </section>
+
+
+
+    <section class="facilities">
+        <h1>Movies</h1>
+        <p>Only 2023</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/jawan.jpg">
+                <h3>Jawan</h3>
+                <a href="https://teraboxapp.com/s/1YJbJd-MUkvyiTUB0tm0QHw" class="hero-btn">Download</a>
+            </div>
+            <div class="facilities-col">
+                <img src="images/gadar 2.jpg">
+                <h3>Gadar 2</h3>
+                <a href="https://teraboxapp.com/s/1HyoupmoSjNDFJMv_8CZHwg" class="hero-btn">Download</a>
+            </div>
+            <div class="facilities-col">
+                <img src="images/Vikram.jpeg">
+                <h3>Vikram 2 (Rolex)</h3>
+                <a href="https://teraboxapp.com/s/12wR9m2BEr3ikRVCk4byH_Q" class="hero-btn">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>Reviews</h1>
+        <p>What Our Downloader Are Saying</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.jpg">
+                <div>
+                    <p>My stay at Code Crafters was nothing short of amazing. The owner's attention to detail is evident in every corner of the hostel. The rooms are cozy and thoughtfully designed, the common hall is a hub of activity and fun, and the food options cater to all tastes. But what truly stood out to me was the staff's warmth and hospitality. They went above and beyond to ensure I had a memorable stay. Without a doubt, I'll be returning to Code Crafters on my next visit!</p>
+                    <h3>Anshi Singh</h3>
+                    <div class="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                
+                
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>Code Crafters offers the perfect blend of comfort and convenience. The rooms are modern, clean, and equipped with all the essentials. The communal kitchen and café made it easy for me to grab a quick bite or cook my own meals. The location is superb, with easy access to public transportation and nearby attractions. I truly appreciated the 24/7 reception  it made my late check-in hassle-free. Kudos to the team for making my stay so enjoyable!</p>
+                    <h3>Elvish Yadav</h3>
+                    <div class="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>This is the Project of MNIT Jaipur Hackathon, Team Name Code Crafters</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i>by Abhishek Singh</p>
+    </section>
+  
+    
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+    
+</body>
+</html>
