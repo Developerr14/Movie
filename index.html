@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <title>Movie Magnet</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <!-- Your existing head content -->
+
 </head>
+
 <body>
     <section class="header">
         <nav>
@@ -26,35 +30,76 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+    </section>
 
     <div class="text-box">
         <h1>New Movies of 2024</h1>
         <p>Explore and Download Latest Movies On First Day. <br> <br>
         <a href="index1.html" class="hero-btn"><span style="color: rgb(247, 243, 6);">Search Engine</span></a>
-        
-
         <a href="Movie Magnet App.apk" class="hero-btn"><span style="color: rgb(247, 243, 6);">Download App</span></a>
-        
         <br><br><br><br>
         <a href="" class="hero-btn">Bollywood</a>
         <a href="" class="hero-btn">Hollywood</a>
         <a href="" class="hero-btn">South Indian</a>
         <a href="" class="hero-btn">Punjabi</a>
     </div>
-    </section>
 
     <section class="course">
         <h1>All New Movies of 2023 on First Day</h1>
         <p>Welcome To Movie Magnet !</p>
     </section>
 
-
-
     <section class="facilities">
         <h1>Movies</h1>
         <p>Only 2023</p>
 
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="movieSearch" placeholder="Search for movies...">
+            <button onclick="searchMovies()">Search</button>
+        </div>
+
+        <div class="row" id="movieList">
+            <!-- Movies will be dynamically added here based on search -->
+            <div class="facilities-col">
+                <img src="images/jawan.jpg">
+                <h3>Jawan</h3>
+                <a href="images/Jawan _ Official Trailer.mp4" class="hero-btn">Download</a>
+            </div>
+            <div class="facilities-col">
+                <img src="images/gadar 2.jpg">
+                <h3>Gadar 2</h3>
+                <a href="images/Gadar2 Official Trailer.mp4" class="hero-btn">Download</a>
+            </div>
+            <div class="facilities-col">
+                <img src="images/Vikram.jpeg">
+                <h3>Vikram (Rolex)</h3>
+                <a href="images/VIKRAM - Official Trailer.mp4" class="hero-btn">Download</a>
+            </div>
+            </div>
+        <div class="row" id="movieList">
+            <!-- Movies will be dynamically added here based on search -->
+            <div class="facilities-col">
+                <img src="images/jawan.jpg">
+                <h3>Jawan</h3>
+                <a href="images/Jawan _ Official Trailer.mp4" class="hero-btn">Download</a>
+            </div>
+            <div class="facilities-col">
+                <img src="images/gadar 2.jpg">
+                <h3>Gadar 2</h3>
+                <a href="images/Gadar2 Official Trailer.mp4" class="hero-btn">Download</a>
+            </div>
+            <div class="facilities-col">
+                <img src="images/Vikram.jpeg">
+                <h3>Vikram (Rolex)</h3>
+                <a href="images/VIKRAM - Official Trailer.mp4" class="hero-btn">Download</a>
+            </div>
+            
+        </div>
+
+        <!-- Your existing movie sections -->
         <div class="row">
+            <!-- First set of movies -->
             <div class="facilities-col">
                 <img src="images/jawan.jpg">
                 <h3>Jawan</h3>
@@ -72,25 +117,27 @@
             </div>
         </div>
         <div class="row">
+            <!-- Second set of movies -->
             <div class="facilities-col">
                 <img src="images/jawan.jpg">
                 <h3>Jawan</h3>
-                <a href="https://t.me/moviemagnett/4" class="hero-btn">Download</a>
+                <a href="images/Jawan _ Official Trailer.mp4" class="hero-btn">Download</a>
             </div>
             <div class="facilities-col">
                 <img src="images/gadar 2.jpg">
                 <h3>Gadar 2</h3>
-                <a href="https://t.me/moviemagnett/6" class="hero-btn">Download</a>
+                <a href="images/Gadar2 Official Trailer.mp4" class="hero-btn">Download</a>
             </div>
             <div class="facilities-col">
                 <img src="images/Vikram.jpeg">
                 <h3>Vikram (Rolex)</h3>
-                <a href="https://teraboxapp.com/s/12wR9m2BEr3ikRVCk4byH_Q" class="hero-btn">Download</a>
+                <a href="images/VIKRAM - Official Trailer.mp4" class="hero-btn">Download</a>
             </div>
         </div>
     </section>
 
     <section class="testimonials">
+        <!-- Your existing testimonials section -->
         <h1>Reviews</h1>
         <p>What Our Downloaders Are Saying</p>
 
@@ -98,7 +145,12 @@
             <div class="testimonial-col">
                 <img src="images/user1.jpg">
                 <div>
-                    <p>My stay at Movie Magnet was nothing short of amazing. The owner's attention to detail is evident in every corner of the Website. The rooms are cozy and thoughtfully designed, the common hall is a hub of activity and fun, and the food options cater to all tastes. But what truly stood out to me was the staff's warmth and hospitality. They went above and beyond to ensure I had a memorable stay. Without a doubt, I'll be returning to Code Crafters on my next visit!</p>
+                    <p>My stay at Movie Magnet was nothing short of amazing.
+                         The owner's attention to detail is evident in every corner of the Website. 
+                         The rooms are cozy and thoughtfully designed, the common hall is a hub of activity and fun, 
+                         and the food options cater to all tastes. But what truly stood out to me was the staff's warmth and hospitality. 
+                         They went above and beyond to ensure I had a memorable stay. Without a doubt, 
+                         I'll be returning to Code Crafters on my next visit!</p>
                     <h3>Anshi Singh</h3>
                     <div class="rating">
                         <span class="star" data-rating="1">&#9733;</span>
@@ -114,7 +166,12 @@
             <div class="testimonial-col">
                 <img src="images/user2.jpg">
                 <div>
-                    <p>Code Crafters offers the perfect blend of comfort and convenience. The rooms are modern, clean, and equipped with all the essentials. The communal kitchen and café made it easy for me to grab a quick bite or cook my own meals. The location is superb, with easy access to public transportation and nearby attractions. I truly appreciated the 24/7 reception  it made my late check-in hassle-free. Kudos to the team for making my stay so enjoyable!</p>
+                    <p>Code Crafters offers the perfect blend of comfort and convenience. 
+                        The rooms are modern, clean, and equipped with all the essentials. 
+                        The communal kitchen and café made it easy for me to grab a quick bite or cook my own meals. 
+                        The location is superb, with easy access to public transportation and nearby attractions. 
+                        I truly appreciated the 24/7 reception  it made my late check-in hassle-free. 
+                        Kudos to the team for making my stay so enjoyable!</p>
                     <h3>Elvish Yadav</h3>
                     <div class="rating">
                         <span class="star" data-rating="1">&#9733;</span>
@@ -130,8 +187,8 @@
         </div>
     </section>
 
-
     <section class="footer">
+        <!-- Your existing footer section -->
         <h4>Disclaimer</h4>
         <p>This is only for Educational & Entertaiment Purpose</p>
         <div class="icons">
@@ -142,10 +199,9 @@
         </div>
         <p>Made with <i class="fa fa-heart-o"></i>by Movie Magnet</p>
     </section>
-  
-    
-    <script>
 
+    <script>
+        // Your existing JavaScript functions
         var navLinks = document.getElementById("navLinks");
         function showMenu(){
             navLinks.style.right = "0";
@@ -154,7 +210,37 @@
             navLinks.style.right = "-200px"
         }
 
+        // Function to fetch movies based on search query
+        function searchMovies() {
+            var searchQuery = document.getElementById("movieSearch").value.toLowerCase();
+            var movieList = document.getElementById("movieList");
+            movieList.innerHTML = ""; // Clear previous movie list
+
+            // Array of existing movies for demonstration (you can replace it with your actual movie data)
+            var movies = [
+                { title: "Jawan", link: "images/Jawan _ Official Trailer.mp4", image: "images/jawan.jpg" },
+                { title: "Gadar 2", link: "images/Gadar2 Official Trailer.mp4", image: "images/gadar 2.jpg" },
+                { title: "Vikram (Rolex)", link: "images/VIKRAM - Official Trailer.mp4", image: "images/Vikram.jpeg" },
+                // Add more movies as needed
+            ];
+
+            // Filter movies based on the search query
+            var filteredMovies = movies.filter(movie => movie.title.toLowerCase().includes(searchQuery));
+
+            // Display the filtered movies
+            filteredMovies.forEach(movie => {
+                var movieCol = document.createElement("div");
+                movieCol.className = "facilities-col";
+                movieCol.innerHTML = `
+                    <img src="${movie.image}"> <!-- Replace with actual movie image -->
+                    <h3>${movie.title}</h3>
+                    <a href="${movie.link}" class="hero-btn">Download</a>
+                `;
+                movieList.appendChild(movieCol);
+            });
+        }
     </script>
-    
+
 </body>
+
 </html>
