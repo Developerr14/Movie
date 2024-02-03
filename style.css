@@ -471,6 +471,31 @@ h3{
 }
 
 
+/*------------ serach button --------*/
 
 
+.search-bar {
+    display: flex;
+}
 
+#movieSearch {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    align-items: center;
+}
+
+#searchButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #45a049;
+}
