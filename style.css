@@ -499,3 +499,11 @@ h3{
 #searchButton:hover {
     background-color: #45a049;
 }
+
+/* Your existing CSS styles */
+
+@media (max-width: 700px) {
+    .hide-on-small-screen {
+        display: none;
+    }
+}
