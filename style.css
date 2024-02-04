@@ -248,10 +248,8 @@ h3{
     align-items: center;
     color: black;
     border: 1px solid #393939;
-    font-size: 16px;
-    
+    font-size: 16px;   
 }
-
 .facilities-col .hero-btn:hover{
     border: 1px solid #ffffff;
     background: #8e8e8e;
@@ -375,7 +373,7 @@ h3{
 .service-right{
     flex-basis: 32%;
 }
-.service-right h3{
+.service-right h5{
     background: #f44336;
     color: #fff;
     padding: 7px 0;
@@ -395,20 +393,41 @@ h3{
     margin: 50px 0;
     padding: 10px 20px;
 }
-.comment-box h3{
+.comment-box h5{
     text-align: left;
-}
-.comment-form input, .comment-form textarea{
-    width: 100%;
-    padding: 10px;
-    margin: 15px 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    background: #f0f0f0;
 }
 .comment-form button{
     margin: 10px 0;
+}
+#email.form-control{
+    display: block;
+    width: 96%;
+    padding: 2%;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+#name.form-control{
+    display: block;
+    width: 96%;
+    padding: 2%;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+#message.form-control{
+    display: block;
+    width: 96%;
+    padding: 2%;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: .25rem;
+    border: 1px solid;
+    height: 10%;
+    padding: 1%;
 }
 
 @media(max-width:700px){
