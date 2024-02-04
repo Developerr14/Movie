@@ -10,6 +10,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script src="service.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("cyWAP6ht7PfRBxP9a");
+   })();
+</script>
 </head>
 <body>
     <section class="sub-header">
@@ -28,10 +38,8 @@
         </nav>
         <h1>Our Services</h1>
     </section>
-
-
+    
     <section class="service-content">
-        
         <div class="row">
             <div class="service-left">
                 <video autoplay loop muted playsinline>
@@ -41,20 +49,31 @@
                 <h2>Our Services</h2>
                 <div class="comment-box">
                     <h3>Leave a Comment & Drop Movie Name to Download any Movie</h3>
+                    
 
-                    <form class="comment-form">
-                        <input type="text" placeholder="Enter Your Name">
-                        <input type="email" placeholder="Enter Your E-mail">
-                        <textarea rows="5" placeholder="Your Comment & Movie Name"></textarea>
-                        <button type="submit" class="hero-btn">Post Comment</button>
-                    </form>
-
+                    <div class="col-md-6 border-left py-3">
+                        <h1>Leave Comment</h1>
+                        <div class="form-group">
+                          <h5 for="name">Enter Your Name</h5>
+                          <input
+                            type="text" class="form-control" id="name" placeholder="Enter name"/>
+                        </div>
+                        <div class="form-group">
+                          <h5 for="email">Enter Your Email</h5>
+                          <input
+                            type="email" class="form-control" id="email" placeholder="Enter email"/>
+                        </div>
+                        <div class="form-group">
+                          <h5 for="message">Enter Your Massage</h5>
+                          <textarea class="form-control" id="message" placeholder="Enter Massage..." rows="8"></textarea>
+                        </div>
+                        <button class="btn btn-primary" onclick="sendMail()">Post  Comment</button>
+                      </div>
                 </div>
             </div>
                 
-                
-            <div class="service-right">
-                <h3>Important Services</h3>
+                <div class="service-right">
+                <h3>Important Services Notes</h3>
                 <div>
                     <span>Hollywood</span>
                     <span>*</span>
@@ -84,10 +103,6 @@
 
     </section>
 
-    
-    
-    
-
     <section class="footer">
         <h4>Disclaimer</h4>
         <p>This is only for Educational & Entertaiment Purpose</p>
@@ -100,11 +115,6 @@
         <p>Made with <i class="fa fa-heart-o"></i>by Movie Magnet</p>
     </section>
     
-
-    
-    
-
-
     <script>
 
         var navLinks = document.getElementById("navLinks");
