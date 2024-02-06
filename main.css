@@ -84,7 +84,31 @@ img{
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
+    justify-content: center;
 }
+@media(max-width: 700px){
+    .search-element{
+        justify-content: center;
+        text-align: center;
+        font-size: 50%;
+        margin: 10%;
+        padding: 10%;
+        margin-left: 55%;
+    }
+    .search-container{
+        justify-content: center;
+        text-align: center;
+        height: 350px;
+        margin-right: 35%;
+    }
+    .logo p{
+        justify-content: center;
+        margin-right: 10%;
+        margin-top: 24%;
+        font-size: 23px;
+    }
+    }
+
 .search-element h3{
     -ms-flex-item-align: center;
         align-self: center;
