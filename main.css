@@ -87,25 +87,18 @@ img{
     justify-content: center;
 }
 @media(max-width: 700px){
-    .search-element{
-        justify-content: center;
-        text-align: center;
-        font-size: 50%;
-        margin: 10%;
-        padding: 10%;
-        margin-left: 55%;
-    }
     .search-container{
-        justify-content: center;
-        text-align: center;
-        height: 350px;
-        margin-right: 35%;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
     .logo p{
-        justify-content: center;
-        margin-right: 10%;
-        margin-top: 24%;
-        font-size: 23px;
+        text-align: center;
+        margin-top: 20%;
+        font-size: 20px;
+        width: 100%;
+        padding: 55px;
+        box-sizing: border-box;
     }
     }
 
